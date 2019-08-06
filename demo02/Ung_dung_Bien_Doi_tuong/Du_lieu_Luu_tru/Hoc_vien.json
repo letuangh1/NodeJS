@@ -1,0 +1,10 @@
+{
+    "Ten":"Trần Thị Bé Lớn",
+    "Ma_so":"HV001",
+    "Ngay_sinh":"01/01/1997",
+    "Lop":{
+        "Ma_so":"JS251T26",
+        "Ten":"Lập trình viên javaScript"
+    },
+    "Diem":[9,9.5,9]
+}

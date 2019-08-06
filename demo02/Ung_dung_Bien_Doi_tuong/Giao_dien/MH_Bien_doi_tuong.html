@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biến đối tượng</title>
+</head>
+<body>
+    
+</body>
+<script>
+// Xây dựng kiểu tự định nghĩa
+class XL_O{
+
+}
+class XL_Dien_thoai{
+    constructor(_ten,_ma_so,_don_gia){
+        //console.log('Chạy rồi đây');
+        this.Ten=_ten
+        this.Ma_so=_ma_so
+        this.Don_gia=_don_gia
+    }
+    Thong_tin(){
+        return 'Thông tin Điện thoai';
+    }
+    static Tong(a,b){
+        return a+b;
+    }    
+}
+
+// Khai báo biến thuộc kiểu tự định nghĩa
+var o =new XL_O();
+console.log(typeof(o));
+// Khai báo đối tượng trong javaScript
+var o1={}; 
+console.log(typeof(o1));
+var Dien_thoai=new XL_Dien_thoai('Iphone 1','IPHONE_1','50000000');
+console.log(Dien_thoai.Ma_so)
+
+// Tham chiếu
+var DT=Dien_thoai;
+DT.Don_gia=100000;
+DT.Trang_thai="Còn hàng"
+//console.log(`Điện thoại: ${Dien_thoai.Don_gia} - DT:${DT.Don_gia}`)
+//console.log(`Điện thoại: ${Dien_thoai.Trang_thai} - DT:${DT.Trang_thai}`)
+console.log(`Điện thoại: ${Dien_thoai.Thong_tin()} - DT:${DT.Thong_tin()}`)
+// Gọi phương thức static
+console.log(XL_Dien_thoai.Tong(2,5))
+
+//var hoc_sinh={};
+
+</script>
+</html>
